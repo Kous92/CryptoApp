@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.cryptoapp.example.cryptoapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|top"
+        android:orientation="vertical"
+        android:background="#000"
+        android:id="@+id/LinearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:background="#ffcc00"
+
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btc"
+                android:backgroundTint="#000"
+                android:textColor="#ffcc00"
+                android:text="BTC" />
+
+            <Button
+                android:id="@+id/dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dollar"
+                android:backgroundTint="#000"
+                android:textColor="#ffcc00"
+                android:onClick="doller"/>
+
+            <Button
+                android:id="@+id/euro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EURO"
+                android:backgroundTint="#000"
+                android:textColor="#ffcc00"
+                android:onClick="euro"/>
+
+            <Button
+                android:id="@+id/Remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="remove"
+                android:backgroundTint="#000"
+                android:textColor="#ffcc00"
+                android:text="Clean DB" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/btc" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
